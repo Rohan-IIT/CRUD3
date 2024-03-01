@@ -7,6 +7,11 @@ const port = 3000
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
+app.get('/', function(req, res) {
+  res.send("daytaa");
+});
+
+
 // const todosRepo = require('./src/todosFileRepository');
 
 // /* GET todos listing. */
